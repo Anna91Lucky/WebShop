@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ShopLearning</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopLearning.styles.css" asp-append-version="true" />
+    <!-- Stylesheets --> 
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <partial name="_Header"/>
+
+
+    @RenderBody() 
+
+    <partial name="_Footer" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
